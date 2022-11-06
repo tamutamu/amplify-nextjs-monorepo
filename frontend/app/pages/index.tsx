@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-const s = require("backend/src/aws-exports");
+
+import { test1 } from "backend/index";
 
 const Home: NextPage = () => {
-  console.log(s);
+  console.log(test1);
 
   return (
     <div className={styles.container}>
