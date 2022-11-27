@@ -1,1 +1,1 @@
-export const test1 = "AAAAStamura";
+export const test1 = "11111111";
