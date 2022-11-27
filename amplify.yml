@@ -32,7 +32,12 @@ applications:
       phases:
         build:
           commands:
-            - echo "build"
+            - mkdir out
+            - echo "<html></html>" > out/index.html
+      artifacts:
+        baseDirectory: out
+        files:
+          - "**/*"
       cache:
         paths:
           - ../../node_modules
