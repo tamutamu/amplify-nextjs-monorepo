@@ -32,10 +32,6 @@ applications:
         build:
           commands:
             - echo "build"
-      artifacts:
-        baseDirectory: out
-        files:
-          - "**/*"
       cache:
         paths:
           - ../../node_modules
