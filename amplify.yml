@@ -6,7 +6,7 @@ applications:
         preBuild:
           commands:
             - cd ../../
-            - yarn
+            - yarn install
         build:
           commands:
             - cd frontend/app
