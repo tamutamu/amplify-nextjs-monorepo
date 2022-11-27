@@ -10,6 +10,8 @@ applications:
         build:
           commands:
             - cd frontend/app
+            - rm -rf .next
+            - rm -rf out
             - yarn build
       artifacts:
         baseDirectory: out
@@ -19,7 +21,6 @@ applications:
         paths:
           - ../../node_modules
           - ./node_modules
-          - .next/cache/**/*
   - appRoot: backend
     backend:
       phases:
