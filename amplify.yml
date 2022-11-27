@@ -20,3 +20,10 @@ applications:
           - ../../node_modules
           - ./node_modules
           - .next/cache/**/*
+  - appRoot: backend
+    backend:
+      phases:
+        build:
+          commands:
+            - "# Execute Amplify CLI with the helper script"
+            - amplifyPush --simple
