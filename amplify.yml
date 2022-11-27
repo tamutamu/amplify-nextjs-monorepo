@@ -1,0 +1,22 @@
+version: 1
+applications:
+  - appRoot: frontend/app
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - cd ../../
+            - yarn
+        build:
+          commands:
+            - cd frontend/app
+            - yarn build
+      artifacts:
+        baseDirectory: out
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - ../../node_modules
+          - ./node_modules
+          - .next/cache/**/*
