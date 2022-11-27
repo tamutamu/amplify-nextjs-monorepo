@@ -27,3 +27,17 @@ applications:
           commands:
             - "# Execute Amplify CLI with the helper script"
             - amplifyPush --simple
+    frontend:
+      phases:
+        build:
+          commands:
+            - echo "build"
+      artifacts:
+        baseDirectory: out
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - ../../node_modules
+          - ./node_modules
+          - .next/cache/**/*
