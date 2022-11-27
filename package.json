@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "next build && next export"
+    "build": "next build && next export",
+    "dev:app": "npm run dev -w frontend/app"
   },
   "author": "",
   "license": "ISC",
