@@ -51,38 +51,13 @@
               "authenticationType": "API_KEY",
               "apiKeyConfig": {
                 "apiKeyExpirationDays": 7,
-                "apiKeyExpirationDate": "2022-12-05T07:39:54.696Z",
+                "apiKeyExpirationDate": "2022-12-04T22:22:26.581Z",
                 "description": ""
               }
             }
           ]
         }
       }
-    }
-  },
-  "function": {
-    "backendFunc": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "auth",
-          "resourceName": "mrbackenddb0015c4",
-          "attributes": [
-            "UserPoolId"
-          ]
-        },
-        {
-          "category": "api",
-          "resourceName": "backendApi",
-          "attributes": [
-            "GraphQLAPIIdOutput",
-            "GraphQLAPIEndpointOutput",
-            "GraphQLAPIKeyOutput"
-          ]
-        }
-      ]
     }
   }
 }
