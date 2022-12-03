@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "auth": {
+      "mrbackenddb0015c4": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "api": {
+      "backendApi": [
+        "Query",
+        "Mutation"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

@@ -5,14 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "next build && next export",
-    "dev:app": "npm run dev -w frontend/app"
+    "dev:app": "npm run dev -w frontend/app",
+    "dev:app2": "npm run dev -w frontend/app2"
   },
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "frontend/app",
-    "backend"
-  ]
+      "frontend/app",
+      "frontend/app2",
+      "backend",
+      "backend/amplify/backend/function/backendFunc/src"
+    ]
 }

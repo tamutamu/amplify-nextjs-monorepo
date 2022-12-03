@@ -21,6 +21,27 @@ applications:
         paths:
           - ../../node_modules
           - ./node_modules
+  - appRoot: frontend/app2
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - cd ../../
+            - yarn install
+        build:
+          commands:
+            - cd frontend/app
+            - rm -rf .next
+            - rm -rf out
+            - yarn build
+      artifacts:
+        baseDirectory: out
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - ../../node_modules
+          - ./node_modules
   - appRoot: backend
     backend:
       phases:
