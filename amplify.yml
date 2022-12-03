@@ -30,7 +30,7 @@ applications:
             - yarn install
         build:
           commands:
-            - cd frontend/app
+            - cd frontend/app2
             - rm -rf .next
             - rm -rf out
             - yarn build
