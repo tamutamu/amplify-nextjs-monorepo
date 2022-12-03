@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import awsconfig from "../src/aws-exports";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const s = awsconfig;
+  const ss = awsconfig;
   return <Component {...pageProps} />;
 }
 
